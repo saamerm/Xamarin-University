@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Design.FontsPage"
+	Title="Fonts">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Padding="10,20,0,0"
+				Spacing="10">
+				<Label
+					Style="{StaticResource Display4Label}"
+					Text="Light" />
+				<Label
+					Style="{StaticResource Display3Label}"
+					Text="Regular 56" />
+				<Label
+					Style="{StaticResource Display2Label}"
+					Text="Regular 45" />
+				<Label
+					Style="{StaticResource Display1Label}"
+					Text="Regular 34" />
+				<Label
+					Style="{StaticResource HeadlineLabel}"
+					Text="Regular 24" />
+				<Label
+					Style="{StaticResource TitleLabel}"
+					Text="Medium 20" />
+				<Label
+					Style="{StaticResource SubheadLabel}"
+					Text="Regular 16" />
+				<Label
+					Style="{StaticResource Body2Label}"
+					Text="Medium 14" />
+				<Label
+					Style="{StaticResource BodyLabel}"
+					Text="Regular 14" />
+				<Label
+					Style="{StaticResource CaptionLabel}"
+					Text="Regular 12" />
+				<Label
+					Text="Default" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

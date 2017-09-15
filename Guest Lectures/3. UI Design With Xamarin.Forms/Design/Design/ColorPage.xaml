@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Design.ColorPage"
+	Title="Colors">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style
+				TargetType="Label">
+				<Setter
+					Property="HeightRequest"
+					Value="40" />
+				<Setter
+					Property="YAlign"
+					Value="Center" />
+			</Style>
+			<Style
+				TargetType="ContentView">
+				<Setter
+					Property="HeightRequest"
+					Value="30" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+				<ContentView
+					BackgroundColor="{StaticResource BrandColor}">
+					<Label
+						Text="Brand Color"
+						TextColor="{StaticResource PrimaryTextColorOnDark}" />
+				</ContentView>
+				<ContentView
+					BackgroundColor="{StaticResource BrandColorLight}">
+					<Label
+						Text="Brand Color Light"
+						TextColor="{StaticResource PrimaryTextColorOnDark}" />
+				</ContentView>
+				<ContentView
+					BackgroundColor="{StaticResource BrandColorDark}">
+					<Label
+						Text="Brand Color Dark"
+						TextColor="{StaticResource PrimaryTextColorOnDark}" />
+				</ContentView>
+				<ContentView
+					BackgroundColor="{StaticResource BrandAccentColor}">
+					<Label
+						Text="Brand Accent Color"
+						TextColor="{StaticResource PrimaryTextColor}" />
+				</ContentView>
+				<StackLayout
+					BackgroundColor="White">
+					<Label
+						Style="{StaticResource TitleLabel}"
+						Text="Text Colors on White Background"
+						TextColor="{StaticResource PrimaryTextColor}"
+						YAlign="Center" />
+					<Label
+						Text="Primary Text Color"
+						TextColor="{StaticResource PrimaryTextColor}" />
+					<Label
+						Text="Secondary Text Color"
+						TextColor="{StaticResource SecondaryTextColor}" />
+					<Label
+						Text="Disabled Text Color"
+						TextColor="{StaticResource DisabledTextColor}" />
+					<Label
+						Text="Divider Text Color"
+						TextColor="{StaticResource DividersColor}" />
+				</StackLayout>
+				<StackLayout
+					BackgroundColor="{StaticResource BrandColor}">
+					<Label 
+						Style="{StaticResource TitleLabel}"
+						Text="Text Colors on Dark Background"
+						TextColor="{StaticResource PrimaryTextColorOnDark}"
+						YAlign="Center" />
+					<Label
+						Text="Primary Text Color"
+						TextColor="{StaticResource PrimaryTextColorOnDark}" />
+					<Label
+						Text="Secondary Text Color"
+						TextColor="{StaticResource SecondaryTextColorOnDark}" />
+					<Label
+						Text="Disabled Text Color"
+						TextColor="{StaticResource DisabledTextColorOnDark}" />
+					<Label
+						Text="Divider Text Color"
+						TextColor="{StaticResource DividersColorOnDark}" />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
